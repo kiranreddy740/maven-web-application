@@ -109,7 +109,7 @@
                   		<altSnapshotDeploymentRepository>http://3.94.102.172:8081/repository/maven-snapshots/</altSnapshotDeploymentRepository>
               		</properties>
           	</profile>
-		</properties>
+		</profiles>
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
