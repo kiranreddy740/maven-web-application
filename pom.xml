@@ -100,7 +100,16 @@
 	      <name>Mithun Technologies Releases Nexus Repository</name>
 	      <url>http://3.94.102.172:8081/repository/maven-releases/</url>
 	    </repository>
-	    
+	     <profiles>
+             	<profile>
+              		<id>nexus</id>
+              		<properties>
+                  		<altDeploymentRepository>http://3.94.102.172:8081/repository/maven-snapshots/</altDeploymentRepository>
+                  		<altReleaseDeploymentRepository>http://3.94.102.172:8081/repository/maven-releases/</altReleaseDeploymentRepository>
+                  		<altSnapshotDeploymentRepository>http://3.94.102.172:8081/repository/maven-snapshots/</altSnapshotDeploymentRepository>
+              		</properties>
+          	</profile>
+		</properties>
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
